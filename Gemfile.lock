@@ -100,6 +100,7 @@ GEM
     phantomjs (2.1.1.0)
     pkg-config (1.1.7)
     rack (1.6.4)
+    rack-cors (0.4.0)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.5.2)
@@ -190,6 +191,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mongoid!
+  rack-cors
   rails (= 4.2.5.2)
   rspec-rails
   sass-rails (~> 5.0)

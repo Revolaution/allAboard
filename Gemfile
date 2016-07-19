@@ -24,6 +24,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #mongoDB
 gem "mongoid", git: 'git://github.com/mongoid/mongoid.git'
 
+#rack-cors enableing cross-origin HTTP requests so Angular can communicate with the server
+gem 'rack-cors'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

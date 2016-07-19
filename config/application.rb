@@ -30,3 +30,16 @@ module AllAboard
     # config.i18n.default_locale = :de
   end
 end
+
+module Starterapp 
+    class Application < Rails::Application 
+        config.middleware.insert_before 0, 'Rack::Cors' do 
+            allow do 
+                origins '*' 
+                resource '*', :headers => :any, :methods => [:get, :post, :options] 
+            end 
+        end
+
+        config.assets.paths << Rails.root.join('node_modules')
+    end
+end
