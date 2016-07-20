@@ -2,10 +2,12 @@
 	"name": "allAboard",
 	"version": "0.0.1",
 	"scripts": { 
+		"start": "concurrently \"npm run tsc\" \"npm run tsc:w\" ",
 		"tsc": "tsc", 
 		"tsc:w": "tsc -w", 
 		"typings": "typings", 
-		"postinstall": "typings install"
+		"postinstall": "typings install",
+		"typings": "typings"
 	},
 	"license": "ISC", 
 	"dependencies": { 
