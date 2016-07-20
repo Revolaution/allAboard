@@ -1,6 +1,7 @@
 import {Component} from 'angular2/core' 
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router' 
 import {HomeComponent} from './home.component'
+import {AppComponent} from './app.component'
 
 @Component({ 
 	selector: 'app-router', 
@@ -10,6 +11,6 @@ import {HomeComponent} from './home.component'
 }) 
 
 @RouteConfig([
-	{ path: '/', name: 'Home', component: HomeComponent }
+	{ path: '/', name: 'App', component: AppComponent }
 ]) 
 export class AppRouterComponent {}
