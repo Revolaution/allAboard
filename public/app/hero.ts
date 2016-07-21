@@ -1,6 +1,5 @@
-import {Component, OnInit} from 'angular2/core' 
-import {RouteParams} from 'angular2/router' 
-import {Http, HTTP_PROVIDERS} from 'angular2/http'
+import {Component, OnInit} from '@angular/core' 
+import {Http, HTTP_PROVIDERS} from '@angular/http'
 
 export class Hero {
 	id: number;
