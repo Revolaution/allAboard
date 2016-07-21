@@ -11,7 +11,7 @@ import { HeroService } from './hero.service';
 	styleUrls:  ['app/heroes.component.css']
 })
 
-export class HeroesComponent implements OnInit { 
+export class HeroesComponent implements OnInit {
 	title = 'Tour of Heroes';
 	heroes: Hero[];
 	selectedHero: Hero;
@@ -19,7 +19,7 @@ export class HeroesComponent implements OnInit {
 	constructor(private router: Router, private heroService: HeroService) {	}
 
 	ngOnInit(){
-		this.getHeroes();	
+		this.getHeroes();
 	}
 
 	getHeroes() {
@@ -35,6 +35,3 @@ export class HeroesComponent implements OnInit {
 	}
 
 }
-
-
-
