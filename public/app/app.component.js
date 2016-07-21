@@ -18,11 +18,12 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n    <h1>{{title}}</h1>\n    <my-heroes></my-heroes>\n  ",
-            directives: [heroes_component_1.HeroesComponent],
+            templateUrl: 'app/app.component.html',
+            directives: [router_1.ROUTER_DIRECTIVES],
             providers: [
                 hero_service_1.HeroService
-            ]
+            ],
+            styleUrls: ['app/app.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
